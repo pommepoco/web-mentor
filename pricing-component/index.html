@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" type="text/css" href="/css/pricing-component.css" media="screen" />
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+
+	<div class="component-wrapper">
+		<div class="title">
+			<h2>Simple, traffic-based pricing</h2>
+			<span>
+				Sign-up for our 30-day trial. No credit card required. 
+			</span>
+		</div>
+
+		<div class="card">
+			<div class="price-wrapper" >
+				<span class="pageviews">100K Pageviews</span>
+				<span class="price-value">
+					<span id="price-value">$16.00</span> / month
+				</span>
+				<label for="price-input">
+					<input class="slider" type="range" min="0" max="4" step="1" id="price-input" name="price-range" />
+				</label>
+			</div>
+
+			<div class="billing-period">
+				<span>Monthly Billing</span>
+				<label for="yearly-billing">
+					<input type="checkbox" id="yearly-billing" class="toggle-btn" name="yearly-billing" />
+				</label>
+				<span>Yearly Billing</span>
+				<span class="discount"> 25% <span>discount</span></span>
+			</div>
+			<hr/>
+			<div class="card-footer">
+				<ul>
+					<li>Unlimited websites</li>
+					<li>100% data ownership</li>
+					<li>Email reports</li>
+				</ul>
+				<button>Start my trial</button>
+			</div>
+		</div>
+
+	</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hugo Arru</a>.
+  </div>
+	<script src="/js/pricing-component.js"></script>  
+</body>
+</html>
