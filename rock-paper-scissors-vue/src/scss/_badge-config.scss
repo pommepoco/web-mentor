@@ -1,0 +1,33 @@
+$radius: 25%;
+
+@function calculateBadgeItemPosition($position) {
+	@return $position - $radius / 2;
+} 
+
+$badgeItems: (
+	rock: (
+		background: linear-gradient(to bottom, hsl(349, 71%, 52%), hsl(349, 70%, 56%)),
+		bottom: 0,
+		right: calculateBadgeItemPosition(25%)
+	),
+	paper: (
+		background: linear-gradient(to bottom, hsl(230, 89%, 62%), hsl(230, 89%, 65%)),
+		right: 0,
+		top: calculateBadgeItemPosition(40%)
+	),
+	lizard: (
+		background: linear-gradient(to bottom, hsl(261, 73%, 60%), hsl(261, 72%, 63%)),
+		bottom: 0,
+		left: calculateBadgeItemPosition(25%)
+	),
+	scissors: (
+		background: linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%)),
+		top: 0,
+		left: calculateBadgeItemPosition(50%)
+	), 
+	spock: (
+		background: linear-gradient(to bottom, hsl(189, 59%, 53%), hsl(189, 58%, 57%)),
+		left: 0,
+		top: calculateBadgeItemPosition(40%)
+	)
+); 
