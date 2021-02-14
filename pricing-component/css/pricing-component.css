@@ -90,6 +90,9 @@ body {
 	font-weight: bold;
 	font-size: 1rem;
 }
+.price-wrapper label {
+	width: 100%;
+}
 
 .price-value {
 	display: inline-flex;
